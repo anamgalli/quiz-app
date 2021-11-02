@@ -1,0 +1,35 @@
+.title-ranking {
+    @include title;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.list-ranking {
+    margin-bottom: 3rem;
+    #table-ranking {
+        background: transparent;
+        tr {
+            border: 1px solid #000;
+            height: 2.6rem;
+            width: 100%;
+            text-align: center;
+            th {
+                text-transform: uppercase;
+                font-size: 0.8rem;
+                background: $principalColor;
+                color: $principalTextColor;
+            }
+            .td {
+                width: 10rem;
+            }
+            td {
+                background: $backgroundLightColor;
+            }
+        }
+    }
+}
+
+.btn-ranking {
+    @include button;
+    padding: 0.8rem 0;
+}

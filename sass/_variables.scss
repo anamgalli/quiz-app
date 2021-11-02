@@ -1,0 +1,39 @@
+// TYPOGRAPHY
+
+$general-font-family: sans-serif;
+$general-font-size: 16px;
+
+// COLORS
+
+$mainBackground: linear-gradient(90deg, #009DE9, #00CEC9);;
+$principalColor: #009793;
+$principalTextColor: #fff;
+$backgroundLightColor: #DDF3EA;
+
+// MIXINS
+
+@mixin title {
+    text-transform: uppercase;
+    color: $principalTextColor;
+    text-shadow: 1px 1px 2px rgb(43, 43, 43);
+    text-align: center;
+}
+
+@mixin button {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 10rem;
+    text-align: center;
+    background: $principalColor;
+    color: $principalTextColor;
+    cursor: pointer;
+    border: none;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    box-shadow: 2px 2px 4px rgb(109, 109, 109);
+    &:hover {
+        transition: box-shadow 0.4s ease;
+        box-shadow: 1px 2px 4px $principalColor;
+    }
+}

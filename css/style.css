@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.container {
+  width: 1100px;
+  margin: auto;
+}
+
+.main {
+  background: linear-gradient(90deg, #009DE9, #00CEC9);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-index {
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 2px #2b2b2b;
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 4rem;
+}
+
+#registration .form-index {
+  display: flex;
+}
+#registration .form-index .username-input {
+  width: 18rem;
+  padding: 0 0.4rem;
+  outline: none;
+  border: none;
+  margin-right: 0.4rem;
+  font-size: 0.8rem;
+  background: #DDF3EA;
+  box-shadow: 2px 2px 4px #6d6d6d;
+}
+#registration .form-index .btn {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background: #009793;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 4px #6d6d6d;
+  padding: 0.8rem 0;
+}
+#registration .form-index .btn:hover {
+  transition: box-shadow 0.4s ease;
+  box-shadow: 1px 2px 4px #009793;
+}
+#registration #message-error-registration {
+  display: none;
+  margin-top: 1rem;
+}
+#registration #message-error-registration .span-error-username {
+  color: #DDF3EA;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.btn-container {
+  display: none;
+}
+
+.btn-index {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background: #009793;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 4px #6d6d6d;
+  display: block;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem 0;
+}
+.btn-index:hover {
+  transition: box-shadow 0.4s ease;
+  box-shadow: 1px 2px 4px #009793;
+}
+
+.btn-index:last-child {
+  margin-bottom: 0;
+}
+
+.container-game {
+  width: 600px;
+  margin: auto;
+  display: none;
+}
+.container-game .title-question {
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 2px #2b2b2b;
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+.container-game .progress-bar {
+  width: 0%;
+  height: 4px;
+  background: linear-gradient(90deg, #00CEC9, #009DE9);
+  margin-top: 3rem;
+}
+
+.question-answer {
+  height: 2.4rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  cursor: pointer;
+  box-shadow: 1px 1px 4px #272727;
+}
+.question-answer:hover {
+  transition: box-shadow 0.4s ease;
+  box-shadow: 1px 1px 6px #009793;
+}
+.question-answer:last-child {
+  margin-bottom: 0;
+}
+.question-answer .option-number {
+  display: block;
+  background: #009793;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0 1;
+  font-weight: bold;
+}
+.question-answer .option-text {
+  background: #DDF3EA;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 0.8em;
+}
+
+.loader {
+  width: 4rem;
+  height: 4rem;
+  border: 0.4rem solid #000;
+  border-top: 0.4rem solid #DDF3EA;
+  border-radius: 50%;
+  animation: spin 1.6s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.title-ranking {
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 1px 2px #2b2b2b;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.list-ranking {
+  margin-bottom: 3rem;
+}
+.list-ranking #table-ranking {
+  background: transparent;
+}
+.list-ranking #table-ranking tr {
+  border: 1px solid #000;
+  height: 2.6rem;
+  width: 100%;
+  text-align: center;
+}
+.list-ranking #table-ranking tr th {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  background: #009793;
+  color: #fff;
+}
+.list-ranking #table-ranking tr .td {
+  width: 10rem;
+}
+.list-ranking #table-ranking tr td {
+  background: #DDF3EA;
+}
+
+.btn-ranking {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 10rem;
+  text-align: center;
+  background: #009793;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 4px #6d6d6d;
+  padding: 0.8rem 0;
+}
+.btn-ranking:hover {
+  transition: box-shadow 0.4s ease;
+  box-shadow: 1px 2px 4px #009793;
+}
+
+/*# sourceMappingURL=style.css.map */

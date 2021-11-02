@@ -1,0 +1,50 @@
+.title-index {
+    @include title;
+    font-size: 3.2rem;
+    margin-bottom: 4rem;
+}
+
+#registration {
+    .form-index {
+        display: flex;
+        .username-input {
+            width: 18rem;
+            padding: 0 0.4rem;
+            outline: none;
+            border: none;
+            margin-right: 0.4rem;
+            font-size: 0.8rem;
+            background: $backgroundLightColor;
+            box-shadow: 2px 2px 4px rgb(109, 109, 109);
+        }
+        .btn {
+            @include button;
+            padding: 0.8rem 0;
+        }
+    }
+    #message-error-registration {
+        display: none;
+        margin-top: 1rem;
+        .span-error-username {
+            color: $backgroundLightColor;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+    }
+}
+
+.btn-container {
+    display: none;
+}
+
+.btn-index {
+    @include button;
+    display: block;
+    margin-bottom: 0.6rem;
+    padding: 0.6rem 0;
+}
+
+.btn-index:last-child {
+    margin-bottom: 0;
+}

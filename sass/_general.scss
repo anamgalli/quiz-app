@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $general-font-family;
+    font-size: $general-font-size;
+}
+
+.container {
+    width: 1100px;
+    margin: auto;
+}
+
+.main {
+    background: $mainBackground;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
